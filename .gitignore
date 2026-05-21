@@ -49,3 +49,4 @@ _train_v2.log
 # графики качества        → _compare*.png, _hist*.png
 # презентации             → prezentaciya_*.pptx
 # исходные скрипты        → *.py
+*.pdf
