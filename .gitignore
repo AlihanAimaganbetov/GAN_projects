@@ -1,0 +1,51 @@
+# ─── Python ───────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# виртуальные окружения
+.venv/
+venv/
+env/
+ENV/
+
+# ─── Jupyter ──────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ─── ОС / редакторы ───────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ─── Office lock-файлы ────────────────────────────────
+~$*.pptx
+~$*.docx
+~$*.xlsx
+
+# ─── Сырые данные с датчика (450+ МБ) ────────────────
+imu_data_*.txt
+lora_angles_*.txt
+
+# ─── Промежуточные артефакты разведки/обучения ───────
+# .npz датасеты — пересобираются скриптами _make_dataset*.py
+_dataset.npz
+_dataset_v2.npz
+_segments.json
+_samples.npy
+_train.log
+_train_v2.log
+
+# ─── НЕ игнорируем (project deliverables) ────────────
+# финальная модель        → _gan_v2.pt
+# финальные сэмплы        → _samples_v2.npy
+# графики качества        → _compare*.png, _hist*.png
+# презентации             → prezentaciya_*.pptx
+# исходные скрипты        → *.py
